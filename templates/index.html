@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Leaf Vein Detection & Plant Identification</title>
+
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            font-family:Arial, sans-serif;
+            background:#f4f7f6;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            margin-top:40px;
+        }
+
+        .header{
+            text-align:center;
+            background:#2e7d32;
+            color:white;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            margin-top:25px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .upload-box{
+            text-align:center;
+        }
+
+        input[type=file]{
+            padding:10px;
+            margin-top:15px;
+        }
+
+        button{
+            background:#2e7d32;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1b5e20;
+        }
+
+        .info{
+            margin-top:20px;
+            line-height:1.8;
+        }
+
+        .workflow{
+            margin-top:20px;
+            text-align:center;
+            font-size:18px;
+            line-height:2;
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:30px;
+            color:gray;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>Leaf Vein Detection and Plant Identification System</h1>
+
+        <p>
+            Image Processing Based Plant Recognition Using Leaf Vein Features
+        </p>
+
+    </div>
+
+    <div class="card upload-box">
+
+        <h2>Upload Leaf Image</h2>
+
+        <form action="/predict"
+              method="POST"
+              enctype="multipart/form-data">
+
+            <input type="file"
+                   name="leaf_image"
+                   accept="image/*"
+                   required>
+
+            <br><br>
+
+            <button type="submit">
+
+                Detect Plant
+
+            </button>
+
+        </form>
+
+    </div>
+
+    
+
+    <div class="footer">
+
+        BE Mini Project | Leaf Vein Detection and Plant Identification
+
+    </div>
+
+</div>
+
+</body>
+</html>

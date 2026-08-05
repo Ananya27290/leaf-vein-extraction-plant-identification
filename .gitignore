@@ -1,0 +1,23 @@
+# Dataset
+dataset/
+
+# Uploaded images
+static/uploads/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# VS Code
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Generated outputs (optional)
+static/output/
